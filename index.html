@@ -10,6 +10,10 @@ html, body {
   height: 100%;
   margin: 0;
 }
+body {
+  opacity: 0;
+  transition: opacity 0.6s
+}
 body::before {
   content: '';
   display: block;
@@ -24,6 +28,6 @@ body::before {
 }
 </style>
 </head>
-<body>
+<body onload="document.body.style.opacity = 1">
 </body>
 </html>
